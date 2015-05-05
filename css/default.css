@@ -1,26 +1,10 @@
-::selection {
-  background-color: #0099cc;
-  color: #fff; }
-::-webkit-selection {
-  background-color: #0099cc;
-  color: #fff; }
-::-moz-selection {
-  background-color: #0099cc;
-  color: #fff; }
+@import url("../third_party/github-markdown-css/github-markdown.css");
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color:#F9F9F9;
-  -webkit-font-smoothing: antialiased;
-  /* prevent subpixel antialiasing, which thickens the text */
-  /* text-rendering: optimizeLegibility; */
-  /* turned off ligatures due to bug 5945455 */ }
+.markdown-body code {
+  padding-left: 0.4em;
+  padding-right: 0.4em;}
 
-body {
-  color: #222;
-  font: 14px/19px Roboto, sans-serif;
-  font-weight: 400;
-  letter-spacing:.1;
-  padding:0 10px; }
+.markdown-body code:before,
+.markdown-body code:after {
+  content: "";
+}
